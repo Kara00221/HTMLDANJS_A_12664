@@ -17,13 +17,25 @@
     <table cellspacing="4" cellpadding="4">
       <style> 
         label {
-          margin-right: 100px;
+          margin-right: 50px;
         }
+        
+        .jenisKelamin {
+          display: inline-block;
+        }
+
       </style>
       <label for="inputNama" class="namaMahasiswa"> Nama Mahasiswa </label>
       <input type ="text" id="inputNama" name="nama" class="inputNama" placeholder="Nama Lengkap" required maxlength="50">
       <!-- TODO: Tambahkan field input teks untuk Nama Mahasiswa dengan tipe teks dan WAJIB DIISI. -->
 
+      <label for="RadioButton" class="jenisKelamin"> Jenis Kelamin </label>
+
+      <input type="radio" id="Male" name="gender" value="male" checked>
+      <label for="male">Laki-Laki</label>
+
+      <input type="radio" id="female" name="gender" value="female"> 
+      <label for="female">Perempuan</label>
       <!-- TODO: Tambahkan field radio button untuk Jenis Kelamin (Laki-laki dan Perempuan) dan WAJIB DIISI -->
 
       <!-- TODO: Tambahkan dropdown untuk Program Studi dengan id="prodi", 
