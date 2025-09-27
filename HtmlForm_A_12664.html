@@ -13,9 +13,15 @@
   </ul>
 
   <h2>Form Pendaftaran Mahasiswa</h2>
-
   <form onsubmit="return validateForm()">
     <table cellspacing="4" cellpadding="4">
+      <style> 
+        label {
+          margin-right: 100px;
+        }
+      </style>
+      <label for="inputNama" class="namaMahasiswa"> Nama Mahasiswa </label>
+      <input type ="text" id="inputNama" name="nama" class="inputNama" placeholder="Nama Lengkap" required maxlength="50">
       <!-- TODO: Tambahkan field input teks untuk Nama Mahasiswa dengan tipe teks dan WAJIB DIISI. -->
 
       <!-- TODO: Tambahkan field radio button untuk Jenis Kelamin (Laki-laki dan Perempuan) dan WAJIB DIISI -->
