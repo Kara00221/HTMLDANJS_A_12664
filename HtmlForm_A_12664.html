@@ -24,6 +24,17 @@
           display: inline-block;
         }
 
+        .dropdown-prodi {
+          margin-left: 27px;
+          margin-right: 30px;
+          width: 300px;
+        }
+
+        .label-prodi {
+          display:inline-block;
+        }  
+        
+
       </style>
       <label for="inputNama" class="namaMahasiswa"> Nama Mahasiswa </label>
       <input type ="text" id="inputNama" name="nama" class="inputNama" placeholder="Nama Lengkap" required maxlength="50">
@@ -31,16 +42,25 @@
 
       <label for="RadioButton" class="jenisKelamin"> Jenis Kelamin </label>
 
-      <input type="radio" id="Male" name="gender" value="male" checked>
+      <input type="radio" id="male" name="gender" value="male" checked>
       <label for="male">Laki-Laki</label>
 
       <input type="radio" id="female" name="gender" value="female"> 
       <label for="female">Perempuan</label>
       <!-- TODO: Tambahkan field radio button untuk Jenis Kelamin (Laki-laki dan Perempuan) dan WAJIB DIISI -->
 
+      <label for="prodi" class="label-prodi"> Program Studi</label>
+      <select id="prodi" name="prodi" required class="dropdown-prodi" required>
+        <option value="pilihprodi">Pilih Prodi</option>
+        <option value="informatika">Informatika</option>
+        <option value="teknikindustri">Teknik Industri</option>
+        <option value="sisteminformasi">Sistem Informasi</option>
+        </select>
       <!-- TODO: Tambahkan dropdown untuk Program Studi dengan id="prodi", 
            opsi: "Pilih Prodi", "Informatika", "Teknik Industri", "Sistem Informasi" dan WAJIB DIISI. -->
 
+
+      
       <!-- TODO: Tambahkan field input angka untuk Nomor Telepon dengan tipe number dan WAJIB DIISI. -->
 
       <!-- TODO: Tambahkan field input tanggal untuk Tanggal Lahir dengan tipe date dan WAJIB DIISI. -->
