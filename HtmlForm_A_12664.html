@@ -38,7 +38,22 @@
         .nomorTelepon {
           padding-right: 16px;
         }
-        
+
+        .tanggalLahir-container {
+          display: flex;
+          align-items: center;
+          margin-bottom: 10px;
+        }
+
+        .tanggalLahir {
+           margin-right: 105px;
+        }
+
+        .inputTanggal {
+            width: 250px;
+            padding: 5px;
+        }
+
 
       </style>
       <label for="inputNama" class="namaMahasiswa"> Nama Mahasiswa </label>
@@ -68,7 +83,12 @@
       <label for="nomorTelepon" class="nomorTelepon"> Nomor Telepon </label>
       <input type ="number" id="inputNomor" name="nomor" class="inputNomor" placeholder="Nomor Telepon" required maxlength="15" required>
       <!-- TODO: Tambahkan field input angka untuk Nomor Telepon dengan tipe number dan WAJIB DIISI. -->
-
+      
+      
+        <div class="tanggalLahir-container">
+        <label for ="tanggalLahir" class ="tanggalLahir"> Tanggal Lahir </label>
+        <input type ="date" id="tanggalLahir" name="tanggalLahir" class="inputTanggal" required>
+        </div>
       <!-- TODO: Tambahkan field input tanggal untuk Tanggal Lahir dengan tipe date dan WAJIB DIISI. -->
 
       <!-- TODO: Tambahkan field input email dengan tipe email dan WAJIB DIISI. -->
