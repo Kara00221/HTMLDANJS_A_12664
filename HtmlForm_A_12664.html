@@ -46,12 +46,27 @@
         }
 
         .tanggalLahir {
-           margin-right: 105px;
+           margin-right: 113px;
         }
 
         .inputTanggal {
             width: 250px;
             padding: 5px;
+        }
+
+        .email-container {
+          display : flex;
+          align-items : center;
+          margin-bottom: 10px;
+        }
+
+        .labelEmail {
+          margin-right: 136px;
+        }
+
+        .inputEmail {
+          widht : 50px;
+          padding : 5px;
         }
 
 
@@ -85,12 +100,17 @@
       <!-- TODO: Tambahkan field input angka untuk Nomor Telepon dengan tipe number dan WAJIB DIISI. -->
       
       
-        <div class="tanggalLahir-container">
+      <div class="tanggalLahir-container">
         <label for ="tanggalLahir" class ="tanggalLahir"> Tanggal Lahir </label>
         <input type ="date" id="tanggalLahir" name="tanggalLahir" class="inputTanggal" required>
-        </div>
+      </div>
       <!-- TODO: Tambahkan field input tanggal untuk Tanggal Lahir dengan tipe date dan WAJIB DIISI. -->
 
+
+      <div class="email-container">
+        <label for ="labelEmail" class ="labelEmail"> Email </label>
+        <input type ="email" id="inputEmail" name="email" class="inputEmail" required>
+      </div>
       <!-- TODO: Tambahkan field input email dengan tipe email dan WAJIB DIISI. -->
 
       <!-- TODO: Tambahkan field input password dengan tipe password dan WAJIB DIISI. -->
